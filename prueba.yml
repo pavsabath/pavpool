@@ -1,0 +1,12 @@
+---
+- hosts: pruebas1
+  tasks:
+     - name: Crea directorio descargas
+       file: path=/tmp/pruebas state=directory mode=0755
+     - name: Instala nmap
+       zypper: name=nmap state=latest
+       notify:
+         - "Prueba de Servicio"
+  handlers:
+     - name: Prueba de Servicio
+       systemd: name=sshd state=started
