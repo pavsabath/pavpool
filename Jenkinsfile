@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("test-image", "./dockerfiles/test")
+        app = docker.build("test-image","tutum/hello-world")
     }
 
     stage('Test image') {
@@ -23,5 +23,5 @@ node {
         }
     }
 
-    
+
 }
