@@ -1,8 +1,9 @@
 pipeline{
- def app
+
 
 		agent {
 			dockerfile true
+			 def app
 		}
 
 	
