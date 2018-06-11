@@ -1,13 +1,16 @@
 # usar una imagen base de nodo
-DESDE nodo: 7-onbuild
+FROM nodo: 7-onbuild
 
 # set maintainer
-Mantenedor LABEL "pruebamerol"
+LABEL maintainer "pruebamerol"
 
 # establecer un control de salud
 HEALTHCHECK --interval = 5s \
             --timeout = 5s \
-            Curvas CMD -f http://192.168.147.144:8000 || salida 1
+           CMD curl -f http://192.168.147.144:8000 || exit 1
 
 # tell docker qué puerto exponer
-EXPONER 8000
+EXPOSE 8000
+
+ ENV  NAME World
+ 
