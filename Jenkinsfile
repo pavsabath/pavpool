@@ -25,7 +25,7 @@ pipeline{
        
         
         sh "docker run -d tutum/hello-world"
-        }
+        
     }
 
 
