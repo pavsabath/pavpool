@@ -9,4 +9,4 @@ var server = http.createServer (function (request, response) {
 
 // escucha en localhost: 8000
 server.listen (8000);
-console.log ("El servidor está escuchando en http://192.168.229.129:8000/");
+console.log ("El servidor está escuchando en http://192.168.147.144:8000/");
