@@ -7,11 +7,11 @@ node {
         checkout scm
     }
 
-    stage('Build image') {
+    stage('run image') {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("test-image","tutum/hello-world")
+        app = docker.run("tutum/hello-world")
     }
 
     stage('Test image') {
