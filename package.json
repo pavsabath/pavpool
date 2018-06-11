@@ -1,0 +1,21 @@
+{
+  "nombre": "orco",
+  "versión": "1.0.0",
+  "descripción": "Un servidor HTTP Hello World",
+  "main": "main.js",
+  "guiones": {
+    "prueba": "eco \" Error: no se especificó ninguna prueba \ "&& exit 1",
+    "inicio": "nodo main.js"
+  },
+  "repositorio": {
+    "tipo": "git",
+    "url": "https://github.com/pavsabath/pavpool/"
+  },
+  "palabras clave": [
+    "nodo",
+    "estibador",
+    "dockerfile"
+  ],
+  "autor": "yomero",
+  "licencia": "none"
+}
