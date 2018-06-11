@@ -1,7 +1,7 @@
 pipeline{
 
 
-		agent {
+		agent  any {
 			dockerfile true
 			 def app
 		}
