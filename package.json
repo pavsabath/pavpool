@@ -4,7 +4,7 @@
   "descripción": "Un servidor HTTP Hello World",
   "main": "main.js",
   "guiones": {
-    "prueba": "eco \" Error: no se especificó ninguna prueba \ "&& exit 1",
+    "prueba": "echo \" Error: no se especificó ninguna prueba \ "&& exit 1",
     "inicio": "nodo main.js"
   },
   "repositorio": {
