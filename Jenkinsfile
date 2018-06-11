@@ -1,12 +1,16 @@
 pipeline{
 
 
-		agent  any {
+		agent  {
 			dockerfile true
 			 def app
 		}
 
+	   stage('Clone repository') {
+	        /* Let's make sure we have the repository cloned to our workspace */
 	
+	        checkout scm
+    }
  stage ('Crear imagen') {
         / * Esto construye la imagen real; sinónimo de
          * Docker build en la línea de comando * /
